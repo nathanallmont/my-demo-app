@@ -92,6 +92,8 @@ async function readProfile() {
 
   const tel = getStringNoLocale(profile, VCARD.hasTelephone);
   document.getElementById("labelTel").textContent = tel;
+
+  
 }
 
 buttonLogin.onclick = function() {  
