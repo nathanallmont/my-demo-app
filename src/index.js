@@ -89,6 +89,9 @@ async function readProfile() {
 
   const org = getStringNoLocale(profile, VCARD.organization_name);
   document.getElementById("labelOrg").textContent = org;
+
+  const tel = getStringNoLocale(profile, VCARD.hasTelephone);
+  document.getElementById("labelTel").textContent = tel;
 }
 
 buttonLogin.onclick = function() {  
